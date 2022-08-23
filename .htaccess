@@ -1,0 +1,5 @@
+DirectoryIndex index.html
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?propboxme\.com
+RewriteRule ^(.*)$ https://www.propboxme.com/$1 [R,L]
